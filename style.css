@@ -9,10 +9,37 @@
     width: 100%;
     position: fixed;
 }
+.hero-sec-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
 .hero-sec-img{
     width: 100%;
-    height: 99.5vh;
-    object-fit: cover;
+    height: 100vh;
+
+    background-image: url("image/4.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    animation: slideshow 15s infinite;
+}
+@keyframes slideshow{
+    0%{
+        background-image: url("image/4.jpeg");
+    }
+    25%{
+        background-image: url("image/wolf.jpeg");
+    }
+    50%{
+        background-image: url("image/7.jpg.jpeg");
+    }
+    75%{
+        background-image: url("image/deer.jpeg");
+    }
+    100%{
+        background-image: url("image/4.jpeg");
+    }
 }
 .hero-sec::before{
     content: "";
@@ -20,7 +47,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 99.5vh;
+    height: 100vh;
     background: rgba(0,0,0,0.4);
     z-index: 1;
 }
@@ -87,6 +114,7 @@
 .footer-name p{
     font-size: 13px;
 }
+
 /*portfolio.html*/
 .Portfolio{
     background-color: black;
@@ -98,13 +126,11 @@
     align-items: center;
     color: white;
     background-color: transparent;
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
 }
@@ -127,6 +153,7 @@
     text-decoration: none;
     color: white;
 }
+
 /*portfolio.html*/
 .image-section{
     margin: 80px;
@@ -146,6 +173,7 @@
 .section2{
     grid-template-columns: 2fr 2fr 2fr;
 }
+
 /*about.html*/
 .about-body{
     background: black;
@@ -247,6 +275,7 @@
 .footer-icon .fa-whatsapp:hover{
     color: mediumspringgreen;
 }
+
 /*contact.html*/
 .contact-body{
     background-color: black;
@@ -274,22 +303,17 @@
     width: 75%;
     background: #1d1d25;
     padding: 60px 40px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-
     color: white;
-
     position: absolute;
     bottom: -120px;
     left: 50%;
     transform: translateX(-50%);
-
     z-index: 5;
 }
-
 .contact-name .email,
 .contact-name .phone,
 .contact-name .location{
@@ -299,27 +323,22 @@
     align-items: center;
     gap: 15px;
 }
-
 .contact-name .email,
 .contact-name .phone{
     border-right: 1px solid rgba(255,255,255,0.2);
 }
-
 .contact-name .icon{
     font-size: 40px;
 }
-
 .contact-name h2{
     font-size: 22px;
     letter-spacing: 2px;
 }
-
 .contact-name .line{
     width: 40px;
     height: 1px;
     background: rgba(255,255,255,0.5);
 }
-
 .contact-name p{
     color: #bdbdbd;
     line-height: 28px;
@@ -338,9 +357,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     gap: 30px;
-    
     cursor: pointer;
 }
 .logo .fa-instagram, .logo .fa-whatsapp{
@@ -571,11 +588,11 @@ button:hover{
     /* CONTACT PAGE */
 
     .contact-sec .contact-name{
-        width: 90%;
+        width: 75%;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         padding: 40px 20px;
-        bottom: -250px;
+        bottom: -270px;
     }
 
     .contact-name .email,

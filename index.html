@@ -13,7 +13,8 @@
 </head>
 <body class="index-body">
     <div class="hero-sec">
-        <img src="image/4.jpg.jpeg" alt="hero-sec" class="hero-sec-img">
+        <!--<img src="image/4.jpg.jpeg" alt="hero-sec" class="hero-sec-img">-->
+        <div class="hero-sec-img"></div>
         <nav class="nav-bar-index">
             <div class="name">
                 <p>Thottiyam Photography</p>
@@ -21,7 +22,7 @@
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="link-list">
+            <div class="link-list" id="mobile-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -40,6 +41,13 @@
             </div>
         </div>
     </div>
-    <script href="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.onclick = function () {
+            mobileMenu.classList.toggle("active");
+        };
+    </script>
 </body>
 </html>
