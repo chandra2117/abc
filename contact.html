@@ -60,8 +60,8 @@
         <input type="hidden" name="access_key" value="f1c085b6-9513-4e6c-8976-86d97f1ae7be">
         <input type="text" placeholder="Enter your name*" name="name" required><br>
         <input type="email" placeholder="Enter your email*" name="email" required><br>
-        <input type="tel" placeholder="Enter your number*" name="number" required><br>
-        <textarea name="message" placeholder="Enter your details*"></textarea><br>
+        <input type="tel" placeholder="Enter your number*" name="number" pattern="[0-9]{10}" required><br>
+        <textarea name="message" placeholder="Enter your details*" required></textarea><br>
         <div class="h-captcha" data-captcha="true"></div>
         <button type="submit">Send a message</button>
     </form>
