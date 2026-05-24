@@ -464,6 +464,9 @@ button:hover{
 .menu-toggle{
     display: none;
 }
+.h-captcha{
+    margin-top: 20px;
+}
 /* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 768px){
