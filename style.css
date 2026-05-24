@@ -420,6 +420,12 @@ textarea{
     border: solid 1px gray;
     color: white;
 }
+input,
+textarea{
+    color: white !important;
+    background-color: transparent !important;
+    caret-color: white;
+}
 button{
     padding: 10px 30px;
     background-color: transparent;
