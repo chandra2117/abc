@@ -423,8 +423,21 @@ textarea{
 input,
 textarea{
     color: white !important;
-    background-color: transparent !important;
+    -webkit-text-fill-color: white !important;
     caret-color: white;
+    background-color: transparent;
+}
+
+input:focus,
+textarea:focus{
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 button{
     padding: 10px 30px;
